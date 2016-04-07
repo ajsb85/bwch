@@ -1,0 +1,35 @@
+{
+  "name": "bwch",
+  "version": "0.1.0",
+  "devDependencies": {
+    "babel-polyfill": "^6.7.4",
+    "babel-preset-es2015": "^6.6.0",
+    "babelify": "^7.2.0",
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^2.2.1",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-shell": "^1.1.2"
+  },
+  "description": "BwCh is a JavaScript API to detect bandwidth for web-based environments. \r It uses some of the latest JavaScript innovation (window.navigator.connection currently \r supported in Chrome 48+ for Android as of April 2016)\r in order to provide a flexible method to detect bandwidth for both mobile and desktop \r devices. \r It fallbacks to image pre-loading to detect bandwidth where those newest API are not available.",
+  "directories": {
+    "example": "example",
+    "test": "test"
+  },
+  "dependencies": {
+    "babel-polyfill": "^6.7.4",
+    "grunt": "^0.4.5",
+    "grunt-concurrent": "^2.2.1",
+    "babelify": "^7.2.0",
+    "babel-preset-es2015": "^6.6.0",
+    "grunt-contrib-watch": "^0.6.1",
+    "grunt-shell": "^1.2.1"
+  },
+  "keywords": [
+    "javascript",
+    "bandwidth",
+    "connection",
+    "browser"
+  ],
+  "author": "Arnaud Leyder",
+  "license": "MIT"
+}
