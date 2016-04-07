@@ -45,9 +45,9 @@ kbps. If the bandwidth could not be determined
 ```javascript
 new BwCh(imagesLoc, steps, timeout, randomQS, debug);
 ```
-
+ 
 `imagesLoc` is a `String` which represents the location of your test images. 
-Default: '../img/'. Please do not use the https://cdn.radiantmediatechs.com/rmp/bandwidth base URL 
+Default: '../img/'. Please do not use the `https://cdn.radiantmediatechs.com/rmp/bandwidth` base URL 
 in your project as this is just a demo. Host the images on your server. Images are PNG because 
 it is an uncompressed format best suited for testing download speed.
 
@@ -75,6 +75,8 @@ You can use `grunt dev` for watchify tasks.
 You need to have [`jshint`](http://jshint.com/install), 
 [`browserify`](http://browserify.org/#install) and 
 [`watchify`](https://github.com/substack/watchify) installed globally to make it work!
+
+Test must be done in a real browser with Jasmine for best results.
 
 
 ## License
