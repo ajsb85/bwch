@@ -79,6 +79,10 @@ You need to have [`jshint`](http://jshint.com/install),
 
 Test must be done in a real browser with Jasmine for best results.
 
+## Specific consideration
+BwCh is provided as a mean to get an *indication* of one device bandwidth. There could be 
+some differences between the estimated bandwidth and the real bandwidth.
+
 
 ## License
 MIT as outlined in the license.txt file
