@@ -29,7 +29,7 @@ import 'babel-polyfill';
 import {BwCh} from '../../../src/bwch';
 (() => {
   'use strict';
-  const bwch = new BwCh('https://cdn.radiantmediatechs.com/rmp/bandwidth', 4, 2500, true, true);
+  const bwch = new BwCh('https://cdn.radiantmediatechs.com/rmp/bandwidth', 4, 2000, true, true);
   let bw = bwch.getBandwidth(); 
   bw.then((bandwidth) => {
     console.log(bandwidth);
@@ -47,7 +47,9 @@ new BwCh(imagesLoc, steps, timeout, randomQS, debug);
 ```
 
 `imagesLoc` is a `String` which represents the location of your test images. 
-Default: '../img/'.
+Default: '../img/'. Please do not use the https://cdn.radiantmediatechs.com/rmp/bandwidth base URL 
+in your project as this is just a demo. Host the images on your server. Images are PNG because 
+it is an uncompressed format best suited for testing download speed.
 
 `steps` is the `Number` of steps for bandwidth detection. Valid values are 1, 2, 3 or 4. 
 The more steps the better is the bandwidth detection but at the cost of extra processing.
