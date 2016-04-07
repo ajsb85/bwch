@@ -9,7 +9,8 @@ It fallbacks to image pre-loading to detect bandwidth where those newest API are
 
 BwCh is used for some of [Radiant Media Player](https://www.radiantmediaplayer.com) features.
 
-BwCh is written with ES2015.
+BwCh is written with ES2015. It is compiled to classic ES5 JavaScript 
+with [Babel](https://babeljs.io/) and [Browserify](http://browserify.org/#install).
 The main file consist of an ES2015 class that needs to be imported in a project where 
 it can be used. 
 
@@ -35,7 +36,9 @@ import {BwCh} from '../../../src/bwch';
 })();  
 ```
 ### Params for the BwCh constructor
+```javascript
 new BwCh(imagesLoc, steps, timeout, randomQS, debug);
+```
 
 `imagesLoc` is a `string` which represents the location of your test images. 
 Default: '../img/'.
@@ -54,6 +57,15 @@ preloading URLs. Default true.
 
 
 ## Building
+```shell
+git clone https://github.com/radiantmediaplayer/bwch.git
+npm install
+grunt
+```
+
+You can use `grunt dev` for watchify
+You need to have [`jshint`](http://jshint.com/install), 
+[`browserify`](http://browserify.org/#install) and [`watchify`](https://github.com/substack/watchify) installed globally to make it work!
 
 
 ## License

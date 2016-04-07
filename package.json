@@ -31,5 +31,13 @@
     "browser"
   ],
   "author": "Arnaud Leyder",
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/radiantmediaplayer/bwch.git"
+  },
+  "bugs": {
+    "url": "https://github.com/radiantmediaplayer/bwch/issues"
+  },
+  "homepage": "https://github.com/radiantmediaplayer/bwch#readme"
 }
