@@ -7,18 +7,20 @@ in order to provide a flexible method to detect bandwidth for both mobile and de
 devices. 
 It fallbacks to image pre-loading to detect bandwidth where those newest API are not available. 
 
-BwCh is used in production for some of 
-[Radiant Media Player](https://www.radiantmediaplayer.com) features.
+BwCh is used for some of [Radiant Media Player](https://www.radiantmediaplayer.com) features.
 
-It is written with ES2015.
+BwCh is written with ES2015.
 The main file consist of an ES2015 class that needs to be imported in a project where 
 it can be used. 
 
-A complete implementation example and jasmine-based test suite is provided.
+A complete implementation example and jasmine-based test suite are provided.
+
 Contributions are welcome.
 
-## usage
-include the bwch.js file in your project. Import the class, create a new instance and call
+## Usage
+Include the bwch.js file in your project. 
+
+Import the class, create a new instance and call
 the getBandwidth method. A Promise is returned with the detected bandwidth.
 ```javascript
 import 'babel-polyfill';
@@ -32,22 +34,27 @@ import {BwCh} from '../../../src/bwch';
   });
 })();  
 ```
-### params for the BwCh constructor
+### Params for the BwCh constructor
 new BwCh(imagesLoc, steps, timeout, randomQS, debug);
+
 `imagesLoc` is a `string` which represents the location of your test images. 
 Default: '../img/'.
+
 `steps` is the `number` of steps for bandwidth detection. Valid values are 1, 2, 3 or 4. 
 The more steps the better is the bandwidth detection but at the cost of extra processing.
+
 `timeout` is a `number` in ms representing the time after which the image preloading 
 (for each image) is stopped. Default 2000.
+
 `randomQS` is a `boolean`. When true it adds a random query string to the image 
 preloading URLs. Default true.
+
 `debug` is a `boolean`. When true it logs BwCh data to the browser console.
 
 
 
-## building
+## Building
 
 
-## license
+## License
 MIT as outlined in the license.txt file
