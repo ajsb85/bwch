@@ -67,6 +67,7 @@ preloading URLs. Default true.
 ## Building
 ```shell
 git clone https://github.com/radiantmediaplayer/bwch.git
+cd bwch
 npm install
 grunt
 ```

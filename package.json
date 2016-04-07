@@ -8,7 +8,8 @@
     "grunt": "^0.4.5",
     "grunt-concurrent": "^2.2.1",
     "grunt-contrib-watch": "^0.6.1",
-    "grunt-shell": "^1.1.2"
+    "grunt-shell": "^1.1.2",
+    "load-grunt-tasks": "^3.4.1"
   },
   "description": "BwCh is a JavaScript API to detect bandwidth for web-based environments. \r It uses some of the latest JavaScript innovation (window.navigator.connection currently \r supported in Chrome 48+ for Android as of April 2016)\r in order to provide a flexible method to detect bandwidth for both mobile and desktop \r devices. \r It fallbacks to image pre-loading to detect bandwidth where those newest API are not available.",
   "directories": {
