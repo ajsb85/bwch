@@ -7,7 +7,8 @@ in order to provide a flexible method to detect bandwidth for both mobile and de
 devices. 
 It fallbacks to image pre-loading to detect bandwidth where those newest API are not available. 
 
-BwCh is used for some of [Radiant Media Player](https://www.radiantmediaplayer.com) features.
+BwCh is used for some of [Radiant Media Player](https://www.radiantmediaplayer.com) 
+newest  features.
 
 BwCh is written with ES2015. It is compiled to classic ES5 JavaScript 
 with [Babel](https://babeljs.io/) and [Browserify](http://browserify.org/#install).
@@ -19,10 +20,8 @@ A complete implementation example and jasmine-based test suite are provided.
 Contributions are welcome.
 
 ## Usage
-Include the bwch.js file in your project. 
-
-Import the class, create a new instance and call
-the getBandwidth method. A Promise is returned with the detected bandwidth.
+Import BwCh class from bwch.js, create a new instance and call
+the getBandwidth method. A `Promise` is returned resolving to the detected bandwidth.
 ```javascript
 import 'babel-polyfill';
 import {BwCh} from '../../../src/bwch';
@@ -35,24 +34,29 @@ import {BwCh} from '../../../src/bwch';
   });
 })();  
 ```
+
+The `bandwidth` returned value is a `Number` representing the detected bandwidth in 
+kbps. If the bandwidth could not be determined 
+(no Internet connection or errors while processing the detection) `-1` is returned. 
+
 ### Params for the BwCh constructor
 ```javascript
 new BwCh(imagesLoc, steps, timeout, randomQS, debug);
 ```
 
-`imagesLoc` is a `string` which represents the location of your test images. 
+`imagesLoc` is a `String` which represents the location of your test images. 
 Default: '../img/'.
 
-`steps` is the `number` of steps for bandwidth detection. Valid values are 1, 2, 3 or 4. 
+`steps` is the `Number` of steps for bandwidth detection. Valid values are 1, 2, 3 or 4. 
 The more steps the better is the bandwidth detection but at the cost of extra processing.
 
-`timeout` is a `number` in ms representing the time after which the image preloading 
+`timeout` is a `Number` in ms representing the time after which the image preloading 
 (for each image) is stopped. Default 2000.
 
-`randomQS` is a `boolean`. When true it adds a random query string to the image 
+`randomQS` is a `Boolean`. When true it adds a random query string to the image 
 preloading URLs. Default true.
 
-`debug` is a `boolean`. When true it logs BwCh data to the browser console.
+`debug` is a `Boolean`. When true it logs BwCh data to the browser console.
 
 
 
@@ -63,9 +67,10 @@ npm install
 grunt
 ```
 
-You can use `grunt dev` for watchify
+You can use `grunt dev` for watchify tasks. 
 You need to have [`jshint`](http://jshint.com/install), 
-[`browserify`](http://browserify.org/#install) and [`watchify`](https://github.com/substack/watchify) installed globally to make it work!
+[`browserify`](http://browserify.org/#install) and 
+[`watchify`](https://github.com/substack/watchify) installed globally to make it work!
 
 
 ## License
