@@ -1,6 +1,6 @@
 # BwCh
 
-BwCh is a JavaScript API to detect bandwidth for web-based environments. 
+BwCh is an open-source JavaScript API to detect bandwidth for web-based environments. 
 It uses some of the latest JavaScript innovation (window.navigator.connection currently 
 supported in Chrome 48+ for Android as of April 2016)
 in order to provide a flexible method to detect bandwidth for both mobile and desktop 
@@ -16,6 +16,8 @@ The main file consist of an ES2015 class that needs to be imported in a project 
 it can be used. 
 
 A complete implementation example and jasmine-based test suite are provided.
+
+You can see it live at work [here](https://www.radiantmediaplayer.com/blog/detecting-bandwidth-with-bwch.html).
 
 Contributions are welcome.
 
